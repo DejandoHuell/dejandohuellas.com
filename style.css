@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff7e6;
+  color: #333;
+}
+
+/* --- HEADER y BUCLE SUPERIOR --- */
+header {
+  background-color: #ffb347;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.top-info {
+  font-size: 13px;
+  background-color: #ffa726;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bucle {
+  display: inline-block;
+  animation: mover 22s linear infinite;
+  padding: 0px;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(45%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logo {
+  width: 300px;
+  max-width: 200%;
+  margin-top: 0px;
+  margin-bottom: -px;
+}
+
+/* --- NAVEGACIÓN PRINCIPAL --- */
+.nav-principal {
+  background-color: #ffb347;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.nav-principal a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-principal a:hover {
+  color: #ffffff;
+}
+
+/* --- PRODUCTOS --- */
+main.productos {
+  padding: 10px;
+  margin-bottom: 70px;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.producto {
+  background: #fffcfc;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+  padding: 2px;
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 0px;
+}
+
+
+/* --- BOTÓN DE COMPRA --- */
+.boton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ff6347;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* --- FOOTER --- */
+footer {
+  background: #ffc94d;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* --- BARRA INFERIOR FIJA --- */
+.barra-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffb347;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 2px solid #e18a00;
+  z-index: 999;
+}
+
+.barra-inferior a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.barra-inferior span {
+  display: block;
+  font-size: 12px;
+  margin-top: 2px;
+}
